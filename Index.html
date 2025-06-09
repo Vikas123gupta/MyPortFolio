@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9d7df1a464.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="Container">
+            <nav>
+                <h1 id="logo-font"><span id="logo-text">V</span>ikas</h1>
+                <img src="images/" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contect">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <!-- <p>Full Stack .NET Developer</p> -->
+                <h2>Hi , I'm <span>Vikas Gupta</span>.<br>
+                 A <span id="typed-text"></span>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <!-- about section -->
+    <div id="About">
+        <div class="Container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/About.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Software Engineer with over 2 years of experience in designing, developing, and deploying scalable web 
+applications using ASP.NET, C#, and .NET frameworks. Proven track record of automating back-end 
+processes, reducing daily workload by 60%, and improving software efficiency by 40%. Skilled in full
+stack development, database optimization, and implementing RESTful APIs. Passionate about building 
+robust, user-friendly applications and fostering collaborative team environments.</p>
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">SKills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Educations</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Language</span><br>C#, C++, JavaScript, HTML5, CSS3</li>
+                        <li><span>Web Development</span><br>Asp.Net MVC, Asp.Net Web Form, .Net Framework, Asp.Net Core </li>
+                        <li><span>Frameworks & Libraries</span><br>Angular 14+, Jquery, Bootstrap5</li>
+                        <li><span>Debugging & Patterns</span><br>Proficient in debugging techniques, C# Design Patterns, Solid Principle </li>
+                        <li><span>Database & ORM</span><br>Ms SQL, Entity Frameworks, LINQ, Restful APIs</li>
+                        <li><span>Version Control & IDE</span><br>Visual Studio, Visual Studio Code, Notepad++, Git, SQL Server</li>
+                        <li><span>Cloud Platforms</span><br>Microsoft Azure</li>
+                        <!-- <li><span>Languages</span><br>Hindi,  English</li> -->
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Feb 2019 - Oct 2021 </span><br>Software Developer Intern at RR Consultant Pvt Ltd</li>
+                        <li><span>Oct 2021 - Current</span><br>Software Developer at RR Consultant Pvt Ltd</li>
+                        <!-- <li><span>2017 - 2019</span><br>Desigining Web/app interfaces</li>  -->
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Expected April 2026</span><br>Master of Computer Applications (MCA) at Swami Vivekananda University </li>
+                        <li><span>July 2021 - March 2024</span><br>Bachelor of Computer Applications (BCA) at Deenbandhu Chotu Ram University of Science and Technology</li>
+                        <li><span>March 2020 - July 2021</span><br>Senior Secondary Education (12th) at Ramjash Sr. Sec. School</li>
+                        <li><span>March 2018 - May 2019</span><br>Higher Education (10th)  at Ramjash Sr. Sec. School</li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- servcies section -->
+    <div id="services">
+        <div class="Container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI?UX</h2>
+                    <p>I create intuitive and engaging user interfaces focused on delivering a smooth and enjoyable user experience. By combining clean design principles with user-centric workflows, I help make your applications easy to use and visually appealing</p>
+                        <!-- <a href="#">Learn more</a> -->
+                </div> 
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Application Development</h2>
+                      <p>I design and build scalable, secure, and user-friendly web applications using the latest .NET technologies such as ASP.NET Core MVC. My services include creating responsive front-end interfaces, developing robust back-end logic, and integrating databases to deliver seamless user experiences tailored to your business needs.
+                        </p>
+                        <!-- <a href="#">Learn more</a> -->
+                </div> 
+                <div>
+                    <i class="fa-brands fa-app-store"></i> 
+                    <h2>API Development & Integration</h2>
+                    <p>I develop secure and efficient RESTful APIs using .NET Core Web API, enabling seamless communication between applications. I also integrate and deploy third-party services like payment gateways, CRMs, and other APIs to extend your platform's functionality and automate workflows.</p>
+                        <!-- <a href="#">Learn more</a> -->
+                </div>  
+                <div>
+                    <i class="fas fa-database"></i>
+                    <h2>Database Design & Management</h2>
+                    <p>I design scalable and efficient database schemas using SQL Server and other relational databases, ensuring data integrity and high performance. I manage data modeling, optimize queries, and implement seamless migrations with Entity Framework to support your application's data requirements.</p>
+                        <!-- <a href="#">Learn more</a> -->
+                </div>  
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="Portfolio">
+        <div class="Container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                        <img src="images/RRBuddy.png" alt="">
+                        <div class="layer">
+                            <h3>RR Buddy</h3>
+                            <p>
+                                 With an 8-member team, I develop an online investment platform supporting SIPs, IPOs, NCDs, FDs, Mutual Funds, and more, enabling users to easily manage and track their investments.
+                            </p>
+                            <a href="https://rrbuddy.com/">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                </div>
+                <div class="work">
+                    <img src="images/Insurance.png" alt="">
+                    <div class="layer">
+                        <h3>RR Policy</h3>
+                        <p>I Have Developed a robust online insurance platform with .NET Core MVC, offering health, car, and travel insurance. Integrated payment gateway to speed up transactions by 25% and enhanced policy management using a third-party insurance API  
+                        </p>
+                            <a href="http://pos.rrfinance.com/car-insurance"><i class="fa-solid fa-arrow-up-right-from-square" ></i></a>
+                    </div>
+                </div>
+            <div class="work">
+                <img src="images/Backoffice.png"  alt="">
+                <div class="layer">
+                    <h3>RR Finance</h3>
+                    <p>Developed the RR Finance Web Application to streamline and manage the complete operations of RR Group, including client details, associate information, CRM, and daily call tracking.</p>
+                        <a href="http://backoffice.rrfinance.in/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- contect -->
+    <div id="contect">
+        <div class="Container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contect Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>11vkgupta@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 9306982033</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://in.linkedin.com/in/vikasguptasde"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="images/VikasGupaResume.pdf" download class="btn bnt2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @vikasGupta 2025</p>
+        </div>
+    </div>
+</body>
+<script>
+
+    var tabllinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tabllink of tabllinks){
+            tabllink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+<script>
+    var typed = new Typed('#typed-text', {
+    strings: [ "Software Developer",
+    ".NET Developer",
+    "Angular Developer",
+    "Full-Stack Developer",
+    "C# Expert",
+    "SQL Specialist",
+    "Web API Developer",
+    "Problem Solver",],
+    typeSpeed: 50,
+    backSpeed: 30,
+    backDelay: 1500,
+    loop: true,
+    showCursor: false
+  });
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw9UxWnURqmwwN36WxJG8W0eDRN8V6GhaK740_nUNDkraNeGrl9bCLsvrxy_22vaAge/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg");
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    alert("Thankyou For Contect Me !")
+    form.reset()
+      .then(response => {
+        setTimeout(function(){
+            msg.innerHTML=""
+        })
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+</script>
+</html>
